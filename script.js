@@ -1,7 +1,8 @@
 const addButton = document.querySelector('input.addButton')
 const num = document.getElementById('number')
 const lis = document.getElementById('select')
-const secondButton = document.getElementById('secondButton')
+const finishButton = document.getElementById('finishButton')
+const resetButton = document.getElementById('resetButton')
 let values = []
 
 function isNum(n) {
@@ -50,5 +51,13 @@ function finish() {
     }
 }
 
+function reset (){
+    lis.innerHTML = ''
+    res.innerHTML = ''
+    values = []
+    
+}
+
 addButton.addEventListener('click', toAdd)
-secondButton.addEventListener('click', finish)
+finishButton.addEventListener('click', finish)
+resetButton.addEventListener('click', reset)
