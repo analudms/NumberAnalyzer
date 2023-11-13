@@ -59,6 +59,7 @@ section {
 
 select {
     border: none;
+    width: 150px;
 }
 
 button {
@@ -81,6 +82,10 @@ button:hover {
 .button-container{
     text-align: center; 
     margin-top: 10px;
+}
+
+.res{
+    line-height: 25px;
 }
 
 .footer {
